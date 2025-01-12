@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example College - Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">FORM</a>
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./form.html">Query Form</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center form">
+
+        <form onsubmit="checkForm(event)">
+            <ul>
+                <li><input type="text" name="full_name" placeholder="Full Name" required></li>
+                <li>
+                    <input type="radio" name="gender" value="male" id="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </li>
+                <li>
+                    <label for="accept_terms">I accept the terms and conditions</label>
+                    <input type="checkbox" name="accept_terms" id="accept_terms">
+                </li>
+                <li>
+                    <input id="clickme" type="button" value="Click Me" onclick="alert('Button clicked!')">
+                    <input id="submit" type="submit" value="Submit">
+                </li>
+            </ul>
+        </form>
+
+    </div>
+</body>
+
+</html>

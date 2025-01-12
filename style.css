@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-image: url('college.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.college-logo {
+    margin: 30px;
+}
+
+::selection {
+    color: #000;
+    background: #fff;
+}
+
+nav {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 7px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background: #fff;
+    color: black;
+}
+
+.img::before {
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: relative;
+    top: 15vh;
+    /* transform: translate(-50%, -50%); */
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center.form {
+    top: 25vh;
+    left: 25vw;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.center .sub_title {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.center .btns {
+    margin-top: 20px;
+}
+
+.center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.center .btns button:first-child {
+    color: #fff;
+    background: none;
+}
+
+.btns button:first-child:hover {
+    background: white;
+    color: black;
+}
+
+.center .btns button:last-child {
+    background: white;
+    color: black;
+}
+
+div.form {
+    width: 50vw;
+}
+
+form {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#clickme {
+    float: left;
+}
+
+#submit {
+    float: right;
+}
+
+form li input {
+    margin: 15px 5px 15px 5px;
+    padding: 7px;
+}
+
+#learnmore {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+.description {
+    font-size: 20px;
+    color: lightgrey;
+    position: relative;
+    background-color: rgba(0.1, 0.1, 0.1, 0.7);
+    padding: 15px;
+    top: 5vh;
+    left: 10vw;
+    width: 80%;
+}
+
+.description p {
+    padding: 10px;
+}
+
+#students_label {
+    float: right;
+    margin: 8px;
+}
+
+#students {
+    width: 250px;
+    border: 3px brown solid;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 0.25fr);
+    gap: 50px;
+    position: relative;
+    left: 23vw;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
